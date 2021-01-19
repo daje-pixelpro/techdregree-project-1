@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #666666;
 }
 /* Link Styles */
 
@@ -23,7 +23,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+.main-menu {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -31,7 +31,7 @@ a:hover {
   position: fixed;
   text-align: center;
 }
-.nav {
+.menu {
   display: flex;
   justify-content: space-around;
   font-weight: 700;
@@ -40,24 +40,24 @@ a:hover {
   padding: 0;
 }
 
-.nav .name {
+.menu .name {
     display: block;
     margin-right: auto;
     color: white;
 }
-.nav li {
+.menu li {
   padding: 5px 10px 10px 10px;
 }
-.nav a {
+.menu a {
   transition: all .5s;
 }
-.nav a:hover {
+.menu a:hover {
   color: white
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('img/codingOnComputer.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -69,12 +69,12 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border-radius: 60% 30% 75% 30%;
+  border: 5px solid white;
+  transition: all .6s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.5) rotate(8deg);
 }
 .tag {
   background-color: #efefef;
@@ -88,19 +88,20 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.card {
+.information-box {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  background: #868686;
+  border: 5px solid #868686;
+  border-radius: 10px;
   transition: all .5s;
 }
-.card:hover {
-  border-color: #ff99ff;
+.information-box:hover {
+  border-color: #666666;
 }
+
 
 ul.skills {
   padding: 0;
@@ -151,20 +152,102 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
+
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(img/linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(img/github.svg);
 }
 a.social:hover {
   opacity: 1;
 }
 .clearfix {
   clear: both;
+}
+
+/* Styles explisit for experience.html  */
+
+#experience-header {
+  background: url(img/computerCode.jpg);
+  background-size: cover;
+}
+
+#header-h1-experience {
+  margin-top: 5em;
+}
+
+ul.experience-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.experience-list li {
+  display: inline-block;
+}
+
+a.skill {
+  display: inline-block;
+  text-indent: -9999px;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+a.html {
+  background-image: url(img/html5.svg);
+}
+a.css {
+  background-image: url(img/css3.svg);
+}
+a.javaScript {
+  background-image: url(img/javascript.svg);
+}
+a.swift {
+  background-image: url(img/swift.svg);
+}
+a.python {
+  background-image: url(img/python.svg);
+}
+a.skill:hover {
+  opacity: 1;
+}
+
+
+/* Styles explisit for contact.html  */
+
+#contact-header {
+  background: url(img/contact.jpg);
+  background-size: cover;
+}
+
+#header-h1-contact {
+  margin-top: 5em;
+}
+
+#contact-h1 {
+  text-align: center;
+}
+
+ul.contact-info {
+  list-style-type: none;
+  color: #efefef;
+  margin: 10px; 
+  padding: 5px;
+  text-align: left; 
+}
+
+ul.contact-info li {
+  margin: 5px;
+}
+
+ul.contact-info li a {
+  color: #efefef;
 }
 
 /* Styles for larger screens */
